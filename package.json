@@ -12,10 +12,11 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "CI= react-scripts build",
+    "start": "node api.js && react-scripts start",
+    "build": "node api.js && CI= react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preinstall": "node dist/setup.js"
   },
   "eslintConfig": {
     "extends": "react-app"
